@@ -99,10 +99,13 @@ form {
   display: flex;
   flex-direction: column;
   border: 2px solid #35030B;
+  width: 50%;
+  align-items: center;
 }
 
 form > * {
   margin: 1rem;
+  width: 60%;
 }
 
 #lista-posts {
@@ -111,4 +114,5 @@ form > * {
   padding: 2rem 2rem;
   font-family: Impact;
 }
+
 </style>
