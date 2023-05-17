@@ -6,6 +6,6 @@
 
 <template>
   <main>
-
   </main>
-</template>
+</template> 
+
