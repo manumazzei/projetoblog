@@ -25,14 +25,12 @@ export default {
     },
   },
 };
-
-
 </script>
 
 <template>
-  <input v-model="search" placeholder="Procure pelo título do post..." /> 
-  <div id="lista-posts">
-    <div class="post" v-for="post in filteredPosts" :key="post.key">
+  <div>
+    <input class="search" v-model="search" placeholder="Procure pelo título do post..." /> 
+    <div class="feed" v-for="post in filteredPosts" :key="post.key">
       <h3>{{ post.title }}</h3>
       <h4>{{ post.datetime }}</h4>
       <p>{{ post.content }}</p>
@@ -41,10 +39,4 @@ export default {
 </template>
 
 <style scoped>
-#lista-posts {
-  background: #ECDCCE;
-  color: #35030B;
-  padding: 2rem 2rem;
-  font-family: Impact;
-}
 </style>

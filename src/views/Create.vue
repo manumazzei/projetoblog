@@ -65,6 +65,6 @@ export default {
       rows="10"
     ></textarea>
 
-    <button type="button" @click="handleClick">Salvar</button>
+    <button class="search3" type="button" @click="handleClick">Salvar</button>
   </form>
 </template>
