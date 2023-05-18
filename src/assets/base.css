@@ -1,64 +1,51 @@
 form {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #35030B;
-    width: 50%;
-    align-items: center;
-  }
-  
-  form > * {
-    margin: 1rem;
-    width: 40%; 
-    justify-content: center;
-    border: 2px solid #35030B; 
-  }
-  
-  .feed {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffe8e9; 
-    color: #35030B;
-    width: 100%;
-    height: 70vh;
-    padding-top: 0;
-  }
-  
-  .search {
-    display: flex;
-    width: 40%;
-    background: white;
-    border: 2px solid #35030B;
-    border-radius: 1ch;
-    padding-top: 0;
-  }
-  
-  .search2 {
-    display: flex;
-    width: 100%;
-    background: #FBEEEE;
-   
-  }
-  
-  .search3{
-    width: 10%;
-    border-radius: 3ch;
-  }
-  .search3:hover{
-    background: #35030B;
-    color: #ffe8e9;
-    border-radius: 3ch;
-  }
-  
-  .post {
-    border: 2px solid white;
-    margin: 1rem;
-    height: 200px;
-    width: 300px;
-    justify-content: center;
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  background: #ffe8e9;
+  height: 90ch;
+}
+
+form > * {
+  margin: 1rem;
+  width: 40%;
+  border-radius: 1ch;
+  border: 2px solid #35030b;
+}
+header {
+  background: #f9eeee;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  display: flex;
+  background: #ffe8e9;
+  padding-top: 2rem;
+  height: 10ch;
+  width: 40%;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-size: 30px;
+  font-family: arial;
+  justify-content: space-between;
+}
+.search {
+  width: 40%;
+  border-radius: 3ch;
+  border: 2px solid #35030b;
+}
+.search3 {
+  width: 10%;
+  border-radius: 3ch;
+}
+.search3:hover {
+  background: #35030b;
+  color: #ffe8e9;
+  border-radius: 3ch;
+}
 
 /*   #lista-posts {
     background: #ECDCCE;
@@ -67,8 +54,8 @@ form {
     font-family: Impact;
   } */
 
-  @import 'form.css';
-  @import 'button.css';
-  @import 'input.css';
+@import "form.css";
+@import "button.css";
+@import "input.css";
 
-  /* para criar arquivos separados no assets css e puxar tudo aqui para importar de uma vez só */
+/* para criar arquivos separados no assets css e puxar tudo aqui para importar de uma vez só */

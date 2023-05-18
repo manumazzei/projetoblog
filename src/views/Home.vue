@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="alinhar">
     <input class="search" v-model="search" placeholder="Procure pelo título do post..." /> 
     <div class="feed" v-for="post in filteredPosts" :key="post.key">
       <h3>{{ post.title }}</h3>
@@ -39,4 +39,17 @@ export default {
 </template>
 
 <style scoped>
+.alinhar{
+  display: flex;
+  justify-content: center;
+  align-items:first baseline;
+  padding-top: 2rem;
+  background: #ffe8e9;
+  height: 73vh;
+}
+
+.feed{
+  border: 2px solid black;
+  flex-direction: column;
+}
 </style>

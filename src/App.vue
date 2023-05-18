@@ -9,8 +9,8 @@ export default {
     };
   },
   methods: {
-    addPost(newPost){
-     /*  adicionar o novo post a lista de posts */
+    addPost(newPost) {
+      /*  adicionar o novo post a lista de posts */
       this.posts.push(newPost);
     },
   },
@@ -18,16 +18,14 @@ export default {
 </script>
 
 <template>
- <header>
+  <header>
     <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/create">Novo Post</RouterLink>
-  </nav>
- </header>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/create">Novo Post</RouterLink>
+    </nav>
+  </header>
 
-  <RouterView :posts="posts" @create-post="addPost"/>
+  <RouterView :posts="posts" @create-post="addPost" />
 </template>
-
-
 
 <style scoped></style>

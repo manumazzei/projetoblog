@@ -68,3 +68,6 @@ export default {
     <button class="search3" type="button" @click="handleClick">Salvar</button>
   </form>
 </template>
+
+<style scoped>
+</style>
