@@ -32,8 +32,8 @@ export default {
     <input class="search" v-model="search" placeholder="Procure pelo título do post..." /> 
     <div class="feed" v-for="post in filteredPosts" :key="post.key">
       <h3>{{ post.title }}</h3>
-      <h4>{{ post.datetime }}</h4>
       <p>{{ post.content }}</p>
+      <h4>{{ post.datetime }}</h4>
     </div>
   </div> 
 </template>
@@ -41,15 +41,44 @@ export default {
 <style scoped>
 .alinhar{
   display: flex;
-  justify-content: center;
-  align-items:first baseline;
+  justify-content: first baseline;
   padding-top: 2rem;
   background: #ffe8e9;
-  height: 73vh;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
 }
 
 .feed{
-  border: 2px solid black;
-  flex-direction: column;
+border: 2px solid #35030b;
+margin-top: 2rem; 
+display:inline-flexbox;
+width: 300px;
+height: 300px;
+text-align: center;
+border-radius: 3ch;
+background: whitesmoke;
+position: relative;
+}
+
+.feed:hover{
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+h3{
+  font-size: 25px;
+  justify-content: first baseline;
+  font-family: fantasy;
+}
+
+p{
+  font-size: 20px;
+  font-family: monospace;
+}
+
+h4{
+  font-size: 13px;
+  justify-content: last baseline;
 }
 </style>

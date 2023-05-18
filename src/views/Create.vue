@@ -12,7 +12,7 @@ export default {
     handleClick(event) {
 
       if(!this.formData.title) {
-        alert("preencha o título do post");
+        alert("Preencha o título do post!");
         return;
       }
 
@@ -42,6 +42,7 @@ export default {
         name: "",
         content: "",
       };
+      this.$router.push("/")
     },
 
     handleImputChange(event) {

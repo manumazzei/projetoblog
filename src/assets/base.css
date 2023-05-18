@@ -1,7 +1,7 @@
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: first baseline;
   align-items: center;
   padding-top: 10rem;
   background: #ffe8e9;
@@ -13,12 +13,14 @@ form > * {
   width: 40%;
   border-radius: 1ch;
   border: 2px solid #35030b;
+  font-family: fantasy;
 }
 header {
   background: #f9eeee;
-  width: 100vw;
+  width: 98, 5vw;
   justify-content: center;
   align-items: center;
+  height: 12ch;
 }
 nav {
   display: flex;
@@ -29,17 +31,19 @@ nav {
   padding-left: 30%;
   padding-right: 30%;
   font-size: 30px;
-  font-family: arial;
+  font-family: fantasy;
   justify-content: space-between;
 }
 .search {
   width: 40%;
   border-radius: 3ch;
   border: 2px solid #35030b;
+  font-family: fantasy;
 }
 .search3 {
   width: 10%;
   border-radius: 3ch;
+  font-family: fantasy;
 }
 .search3:hover {
   background: #35030b;
@@ -47,12 +51,9 @@ nav {
   border-radius: 3ch;
 }
 
-/*   #lista-posts {
-    background: #ECDCCE;
-    color: #35030B;
-    padding: 2rem 2rem;
-    font-family: Impact;
-  } */
+.mouse {
+  cursor: url("@/assets/cursorbranco.png;"), default;
+}
 
 @import "form.css";
 @import "button.css";
