@@ -5,13 +5,22 @@ import "@/assets/base.css";
 export default {
   data() {
     return {
-      posts: [],
+      posts: [
+        {
+          title: "Meu primeiro Post",
+          datetime: "18/5/2023",
+          content: "Conteudo magnifico"
+        },
+      ],
     };
   },
   methods: {
     addPost(newPost) {
       /*  adicionar o novo post a lista de posts */
       this.posts.push(newPost);
+    },
+    updatePost(updatedPost, id) {
+        this.posts[id] = updatedPost;
     },
   },
 };
@@ -25,7 +34,7 @@ export default {
     </nav>
   </header>
   <main>
-    <RouterView :posts="posts" @create-post="addPost" />
+    <RouterView :posts="posts" @create-post="addPost" @edit-post="updatePost"/>
   </main>
 </template>
 
