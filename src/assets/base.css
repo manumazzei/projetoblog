@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -49,10 +54,6 @@ nav {
   background: #35030b;
   color: #ffe8e9;
   border-radius: 3ch;
-}
-
-.mouse {
-  cursor: url("@/assets/cursorbranco.png;"), default;
 }
 
 @import "form.css";
