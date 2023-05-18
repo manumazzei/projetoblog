@@ -24,8 +24,9 @@ export default {
       <RouterLink to="/create" class="link">Novo Post</RouterLink>
     </nav>
   </header>
-
-  <RouterView :posts="posts" @create-post="addPost" />
+  <main>
+    <RouterView :posts="posts" @create-post="addPost" />
+  </main>
 </template>
 
 <style scoped>
