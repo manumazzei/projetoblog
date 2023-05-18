@@ -12,7 +12,7 @@ export default {
     handleClick(event) {
 
       if(!this.formData.title) {
-        alert("preencha o título do post");
+        alert("Preencha o título do post!");
         return;
       }
 
@@ -42,6 +42,7 @@ export default {
         name: "",
         content: "",
       };
+      this.$router.push("/")
     },
 
     handleImputChange(event) {
@@ -65,6 +66,9 @@ export default {
       rows="10"
     ></textarea>
 
-    <button type="button" @click="handleClick">Salvar</button>
+    <button class="search3" type="button" @click="handleClick">Salvar</button>
   </form>
 </template>
+
+<style scoped>
+</style>

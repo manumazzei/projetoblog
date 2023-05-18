@@ -1,18 +1,62 @@
 form {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #35030B;
-    width: 50%;
-    align-items: center;
-  }
-  
-  form > * {
-    margin: 1rem;
-    width: 60%;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  align-items: center;
+  padding-top: 10rem;
+  background: #ffe8e9;
+  height: 90ch;
+}
 
-  @import 'form.css';
-  @import 'button.css';
-  @import 'input.css';
+form > * {
+  margin: 1rem;
+  width: 40%;
+  border-radius: 1ch;
+  border: 2px solid #35030b;
+  font-family: fantasy;
+}
+header {
+  background: #f9eeee;
+  width: 98, 5vw;
+  justify-content: center;
+  align-items: center;
+  height: 12ch;
+}
+nav {
+  display: flex;
+  background: #ffe8e9;
+  padding-top: 2rem;
+  height: 10ch;
+  width: 40%;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-size: 30px;
+  font-family: fantasy;
+  justify-content: space-between;
+}
+.search {
+  width: 40%;
+  border-radius: 3ch;
+  border: 2px solid #35030b;
+  font-family: fantasy;
+}
+.search3 {
+  width: 10%;
+  border-radius: 3ch;
+  font-family: fantasy;
+}
+.search3:hover {
+  background: #35030b;
+  color: #ffe8e9;
+  border-radius: 3ch;
+}
 
-  /* para criar arquivos separados no assets css e puxar tudo aqui para importar de uma vez só */
+.mouse {
+  cursor: url("@/assets/cursorbranco.png;"), default;
+}
+
+@import "form.css";
+@import "button.css";
+@import "input.css";
+
+/* para criar arquivos separados no assets css e puxar tudo aqui para importar de uma vez só */

@@ -25,26 +25,60 @@ export default {
     },
   },
 };
-
-
 </script>
 
 <template>
-  <input v-model="search" placeholder="Procure pelo título do post..." /> 
-  <div id="lista-posts">
-    <div class="post" v-for="post in filteredPosts" :key="post.key">
+  <div class="alinhar">
+    <input class="search" v-model="search" placeholder="Procure pelo título do post..." /> 
+    <div class="feed" v-for="post in filteredPosts" :key="post.key">
       <h3>{{ post.title }}</h3>
-      <h4>{{ post.datetime }}</h4>
       <p>{{ post.content }}</p>
+      <h4>{{ post.datetime }}</h4>
     </div>
   </div> 
 </template>
 
 <style scoped>
-#lista-posts {
-  background: #ECDCCE;
-  color: #35030B;
-  padding: 2rem 2rem;
-  font-family: Impact;
+.alinhar{
+  display: flex;
+  justify-content: first baseline;
+  padding-top: 2rem;
+  background: #ffe8e9;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feed{
+border: 2px solid #35030b;
+margin-top: 2rem; 
+display:inline-flexbox;
+width: 300px;
+height: 300px;
+text-align: center;
+border-radius: 3ch;
+background: whitesmoke;
+position: relative;
+}
+
+.feed:hover{
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+h3{
+  font-size: 25px;
+  justify-content: first baseline;
+  font-family: fantasy;
+}
+
+p{
+  font-size: 20px;
+  font-family: monospace;
+}
+
+h4{
+  font-size: 13px;
+  justify-content: last baseline;
 }
 </style>
