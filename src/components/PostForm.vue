@@ -2,6 +2,7 @@
 export default {
   props: {
     post: Object,
+    id: String,
   },
   data() {
     return {
@@ -11,6 +12,7 @@ export default {
           "" /* || significa ou, se ele nao consegue um faz o outro */,
         content: this.post?.content || "",
       },
+      isEditing: Boolean(this.post),
     };
   },
   methods: {
@@ -25,7 +27,7 @@ export default {
 
       const dataDaPostagem = `${now.getDate()}/${
         now.getMonth() + 1
-      }/${now.getFullYear()}`;
+      }/${now.getFullYear()} - ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
 
       /*  this.posts.push({
         title: this.formData.title,
@@ -33,19 +35,24 @@ export default {
         datetime: dataDaPostagem,
       });  */
 
-      const newPost = {
+      const postData = {
         title: this.formData.title,
         content: this.formData.content,
         datetime: dataDaPostagem,
       };
 
-      /* emitir o evento create-post */
-      this.$emit("create-post", newPost);
+      if (this.isEditing) {
+        this.$emit("edit-post", postData, this.id);
+      } else {
+        this.$emit("create-post", postData);
+      };
 
-      this.formData = {
+      /* this.formData = {
         name: "",
         content: "",
       };
+      this.$router.push("/"); */
+
       this.$router.push("/");
     },
   },
@@ -53,7 +60,7 @@ export default {
 </script>
 
 <template>
-  <!--   {{ formData.viewsCount }} -->
+  ID passado pelo meu pai: {{ id }}
   <form>
     <input v-model="formData.title" placeholder="Titulo" />
     <textarea
