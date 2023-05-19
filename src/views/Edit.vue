@@ -7,8 +7,11 @@ export default {
     posts: Array,
   },
   data() {
+   // acessa o parametro id apenas uma vez
+    const id = this.$route.params.id;
     return {
-      post: this.posts[this.$route.params.id],
+      id: id, //expondo a variavel id para ser acessivel no template
+      post: this.posts[id],
     };
   },
   components: {
@@ -18,10 +21,6 @@ export default {
 
 </script>
 
-
-
-
-
 <template>
-    <PostForm :post="post" />
+    <PostForm :post="post" :id="id" />
 </template>
