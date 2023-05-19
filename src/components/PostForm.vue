@@ -6,7 +6,9 @@ export default {
   data() {
     return {
       formData: {
-        title: this.post?.title || "", /* || significa ou, se ele nao consegue um faz o outro */
+        title:
+          this.post?.title ||
+          "" /* || significa ou, se ele nao consegue um faz o outro */,
         content: this.post?.content || "",
       },
     };
@@ -51,8 +53,7 @@ export default {
 </script>
 
 <template>
-
-<!--   {{ formData.viewsCount }} -->
+  <!--   {{ formData.viewsCount }} -->
   <form>
     <input v-model="formData.title" placeholder="Titulo" />
     <textarea
@@ -62,6 +63,8 @@ export default {
       rows="10"
     ></textarea>
 
-    <button class="search3" type="button" @click="handleClick">Salvar</button>
+    <button class="search3" type="button" @click="handleCreatePost">
+      Salvar
+    </button>
   </form>
 </template>

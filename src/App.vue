@@ -20,7 +20,7 @@ export default {
       this.posts.push(newPost);
     },
     updatePost(updatedPost, id) {
-        this.posts[id] = updatedPost;
+        this.posts [id].updatedPost;
     },
   },
 };
