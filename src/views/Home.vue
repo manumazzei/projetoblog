@@ -8,6 +8,7 @@ export default {
   data() {
     return {
       search: "",
+      showModal: false,
     };
   },
   computed: {
@@ -32,12 +33,15 @@ export default {
       /* passa pela lista de posts(nao filtrada) */
       for (const index in this.posts) {
         /* acessa o post na posição index da lista de posts */
-        const post = this.posts [index];
+        const post = this.posts[index];
         /* verifica se o titulo do post atual é igual ao titulo buscado */
-        if (post.title ===title) return index;
+        if (post.title === title) return index;
       }
-    }
-  }
+    },
+    toggle() {
+      this.showModal = !this.showModal;
+    },
+  },
 };
 </script>
 
@@ -51,12 +55,24 @@ export default {
     <div class="feed" v-for="post in filteredPosts" :key="post.key">
       <h3>
         {{ post.title }}
-        <RouterLink :to="`/edit/${getPostId (post.title)}`">
+        <RouterLink :to="`/edit/${getPostId(post.title)}`">
           <span class="material-symbols-rounded">edit</span>
         </RouterLink>
+        <span class="material-symbols-rounded" @click="toggle">delete</span>
       </h3>
       <p>{{ post.content }}</p>
       <h4>{{ post.datetime }}</h4>
+    </div>
+  </div>
+  <div class="modal" v-show="showModal">
+    <div class="modal-content">
+      <h3>Deletar Post</h3>
+      <p>Tem certeza que quer deletar o post 'TITULO DO POST AQUI'</p>
+
+      <div class="modal-actions">
+        <button class="bg-error" @click="toggle">Cancelar</button>
+        <button class="bg-success">Confirmar</button>
+      </div>
     </div>
   </div>
 </template>
@@ -82,7 +98,7 @@ export default {
   border-radius: 3ch;
   background: whitesmoke;
   position: relative;
-  overflow:auto;
+  overflow: auto;
 }
 
 .feed:hover {
