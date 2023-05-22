@@ -65,13 +65,20 @@ export default {
       placeholder="Procure pelo título do post..."
     />
     <div class="feed" v-for="post in filteredPosts" :key="post.key">
-      <h3>
-        {{ post.title }}
+      <div class="flex">
+        
+      <RouterLink :to="`/detail/${getPostId(post.title)}`">
+        <h3>
+          {{ post.title }}
+        </h3>
+      </RouterLink>
+      
         <RouterLink :to="`/edit/${getPostId(post.title)}`">
           <span class="material-symbols-rounded">edit</span>
         </RouterLink>
         <span class="material-symbols-rounded" @click="setupModal(getPostId(post.title))">delete</span>
-      </h3>
+      </div>
+
       <p>{{ post.content }}</p>
       <h4>{{ post.datetime }}</h4>
     </div>
