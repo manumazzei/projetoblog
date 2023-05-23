@@ -56,8 +56,4 @@ nav {
   border-radius: 3ch;
 }
 
-@import "form.css";
-@import "button.css";
-@import "input.css";
-
 /* para criar arquivos separados no assets css e puxar tudo aqui para importar de uma vez só */
