@@ -11,3 +11,120 @@ POST
 - read
 - update
 - delete
+
+
+.link{
+ width: 25%;
+ height: 40px;
+ border: 2px solid #35030b;
+ justify-content: center;
+ text-align: center;
+ border-radius: 3ch;
+ background: whitesmoke;
+ color:#35030b;
+ text-decoration: none;
+ font-family: fantasy;
+}
+
+.link:hover{
+  background: #35030b;
+  color: #ffe8e9;
+  border-radius: 3ch;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  align-items: center;
+  padding-top: 10rem;
+  background: #ffe8e9;
+  height: 90ch;
+}
+
+form > * {
+  margin: 1rem;
+  width: 40%;
+  border-radius: 1ch;
+  border: 2px solid #35030b;
+  font-family: fantasy;
+}
+header {
+  background: #f9eeee;
+  width: 98, 5vw;
+  justify-content: center;
+  align-items: center;
+  height: 12ch;
+}
+nav {
+  display: flex;
+  background: #ffe8e9;
+  padding-top: 2rem;
+  height: 10ch;
+  width: 40%;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-size: 30px;
+  font-family: fantasy;
+  justify-content: space-between;
+}
+.search {
+  width: 40%;
+  border-radius: 3ch;
+  border: 2px solid #35030b;
+  font-family: fantasy;
+}
+.search3 {
+  width: 10%;
+  border-radius: 3ch;
+  font-family: fantasy;
+}
+.search3:hover {
+  background: #35030b;
+  color: #ffe8e9;
+  border-radius: 3ch;
+}
+
+.alinhar {
+  display: flex;
+  justify-content: first baseline;
+  padding-top: 2rem;
+  background: #ffe8e9;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feed {
+  border: 2px solid #35030b;
+  margin-top: 2rem;
+  display: inline-flexbox;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-radius: 3ch;
+  background: whitesmoke;
+  position: relative;
+  overflow: auto;
+}
+
+.feed:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+h3 {
+  font-size: 25px;
+  justify-content: first baseline;
+  font-family: fantasy;
+}
+
+p {
+  font-size: 20px;
+  font-family: monospace;
+}
+
+h4 {
+  font-size: 13px;
+  justify-content: last baseline;
+}

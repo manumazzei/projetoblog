@@ -11,6 +11,16 @@ export default {
           datetime: "18/5/2023",
           content: "Conteudo magnifico"
         },
+        {
+          title: "Meu segundo Post",
+          datetime: "18/5/2023",
+          content: "Conteudo magnifico"
+        },
+        {
+          title: "Meu terceiro Post",
+          datetime: "18/5/2023",
+          content: "Conteudo magnifico"
+        },
       ],
     };
   },
@@ -41,8 +51,9 @@ export default {
 <template>
   <header>
     <nav>
-      <RouterLink to="/" class="link">Home</RouterLink>
-      <RouterLink to="/create" class="link">Novo Post</RouterLink>
+      <RouterLink to="/" class="botao">Home</RouterLink>
+      <img src="/text-books.png">
+      <RouterLink to="/create" class="botao">Novo Post</RouterLink>
     </nav>
   </header>
   <main>
@@ -55,22 +66,5 @@ export default {
 
 <style scoped>
 
-.link{
- width: 25%;
- height: 40px;
- border: 2px solid #35030b;
- justify-content: center;
- text-align: center;
- border-radius: 3ch;
- background: whitesmoke;
- color:#35030b;
- text-decoration: none;
- font-family: fantasy;
-}
 
-.link:hover{
-  background: #35030b;
-  color: #ffe8e9;
-  border-radius: 3ch;
-}
 </style>

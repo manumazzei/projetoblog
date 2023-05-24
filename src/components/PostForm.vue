@@ -60,7 +60,6 @@ export default {
 </script>
 
 <template>
-  ID passado pelo meu pai: {{ id }}
   <form>
     <input v-model="formData.title" placeholder="Titulo" />
     <textarea
@@ -70,7 +69,7 @@ export default {
       rows="10"
     ></textarea>
 
-    <button class="search3" type="button" @click="handleCreatePost">
+    <button class="create" type="button" @click="handleCreatePost">
       Salvar
     </button>
   </form>

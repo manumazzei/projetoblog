@@ -62,31 +62,27 @@ export default {
     <input
       class="search"
       v-model="search"
-      placeholder="Procure pelo título do post..."
-    />
-    <div class="feed" v-for="post in filteredPosts" :key="post.key">
-      <div class="flex">
-        
+      placeholder="Procure pelo título do post..."/>
+      <div class="feed" v-for="post in filteredPosts" :key="post.key">
+        <div class="teste">
       <RouterLink :to="`/detail/${getPostId(post.title)}`">
-        <h3>
+        <h3 class="title">
           {{ post.title }}
         </h3>
       </RouterLink>
-      
-        <RouterLink :to="`/edit/${getPostId(post.title)}`">
+      <RouterLink :to="`/edit/${getPostId(post.title)}`">
           <span class="material-symbols-rounded">edit</span>
-        </RouterLink>
-        <span class="material-symbols-rounded" @click="setupModal(getPostId(post.title))">delete</span>
-      </div>
-
+      </RouterLink>
+          <span class="material-symbols-rounded" @click="setupModal(getPostId(post.title))">delete</span>
       <p>{{ post.content }}</p>
       <h4>{{ post.datetime }}</h4>
+      </div>
     </div>
   </div>
   <div class="modal" v-show="showModal">
     <div class="modal-content">
-      <h3>Deletar Post</h3>
-      <p>Tem certeza que quer deletar o post '{{ selectedPost?.title }}'?</p>
+      <h3 class="delete">Deletar Post</h3>
+      <p class="sure">Tem certeza que quer deletar o post '{{ selectedPost?.title }}'?</p>
 
       <div class="modal-actions">
         <button class="bg-error" @click="setupModal">Cancelar</button>
@@ -97,47 +93,6 @@ export default {
 </template>
 
 <style scoped>
-.alinhar {
-  display: flex;
-  justify-content: first baseline;
-  padding-top: 2rem;
-  background: #ffe8e9;
-  height: 100vh;
-  align-items: center;
-  flex-direction: column;
-}
 
-.feed {
-  border: 2px solid #35030b;
-  margin-top: 2rem;
-  display: inline-flexbox;
-  width: 300px;
-  height: 300px;
-  text-align: center;
-  border-radius: 3ch;
-  background: whitesmoke;
-  position: relative;
-  overflow: auto;
-}
 
-.feed:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
-}
-
-h3 {
-  font-size: 25px;
-  justify-content: first baseline;
-  font-family: fantasy;
-}
-
-p {
-  font-size: 20px;
-  font-family: monospace;
-}
-
-h4 {
-  font-size: 13px;
-  justify-content: last baseline;
-}
 </style>

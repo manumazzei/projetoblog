@@ -1,37 +1,41 @@
+@import "modal.css";
+
+
 * {
   padding: 0;
   margin: 0;
+  background-color: #f8f6eb;
+  font-family: 'Gill Sans';
+  cursor: url('public/penmenorainda.png'), auto;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: first baseline;
-  align-items: center;
-  padding-top: 10rem;
-  background: #ffe8e9;
-  height: 90ch;
+a:any-link{
+ text-decoration: none;
+ color: inherit;
 }
 
-form > * {
-  margin: 1rem;
-  width: 40%;
-  border-radius: 1ch;
+.botao {
+  width: 25%;
+  height: 40px;
+  border-radius: 3ch;
+  text-align: center;
+  text-decoration: none;
+  background: #E7DFD8;
   border: 2px solid #35030b;
-  font-family: fantasy;
+  color: #654F3A;
 }
-header {
-  background: #f9eeee;
-  width: 98, 5vw;
-  justify-content: center;
-  align-items: center;
-  height: 12ch;
+
+.botao:hover {
+  background: #231F20;
+  color:#FFFFFF;
+  border-radius: 3ch;
 }
+
 nav {
   display: flex;
-  background: #ffe8e9;
+  background: #f8f6eb;
   padding-top: 2rem;
-  height: 10ch;
+  height: 5ch;
   width: 40%;
   padding-left: 30%;
   padding-right: 30%;
@@ -40,20 +44,77 @@ nav {
   justify-content: space-between;
 }
 .search {
-  width: 40%;
+  width: 30%;
   border-radius: 3ch;
   border: 2px solid #35030b;
-  font-family: fantasy;
+  justify-content: center;
+  align-items: center;
+  background: #E7DFD8;
+  opacity: 70%;
+  text-align: center;
 }
-.search3 {
-  width: 10%;
+
+textarea{
+  color:#35030b;
+}
+
+.alinhar {
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  text-align: center;
+}
+.feed {
+  border: 2px solid #35030b;
+  margin-top: 1rem;
+  width: 200px;
+  height: 200px;
   border-radius: 3ch;
-  font-family: fantasy;
+  overflow: auto;
 }
-.search3:hover {
-  background: #35030b;
-  color: #ffe8e9;
+
+.feed:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  align-items: center;
+}
+
+form > * {
+  margin: 1rem;
+  width: 30%;
+  border-radius: 1ch;
+  border: 2px solid #35030b;
+  background: #E7DFD8;
+  opacity: 70%;
+}
+
+.create {
+  width: 10%;
   border-radius: 3ch;
 }
 
-/* para criar arquivos separados no assets css e puxar tudo aqui para importar de uma vez só */
+.create:hover {
+  background: #231F20;
+  color:#FFFFFF;
+  border-radius: 3ch;
+}
+
+.teste{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.title{
+  justify-content: first baseline;
+  padding-top: 1px;
+  text-decoration: none;
+  color:#231F20;
+}
