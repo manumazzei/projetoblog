@@ -8,17 +8,17 @@ export default {
       posts: [
         {
           title: "Meu primeiro Post",
-          datetime: "18/5/2023",
+          datetime: "18/05/2023 - 10:11:29",
           content: "Conteudo magnifico"
         },
         {
           title: "Meu segundo Post",
-          datetime: "18/5/2023",
+          datetime: "18/05/2023 - 12:23:43",
           content: "Conteudo magnifico"
         },
         {
           title: "Meu terceiro Post",
-          datetime: "18/5/2023",
+          datetime: "19/05/2023 - 15:45:22",
           content: "Conteudo magnifico"
         },
       ],

@@ -6,7 +6,7 @@
   margin: 0;
   background-color: #f8f6eb;
   font-family: 'Gill Sans';
-  cursor: url('public/penmenorainda.png'), auto;
+  cursor: url('public/hand-removebg-preview.png'), auto;
 }
 
 a:any-link{
@@ -59,6 +59,7 @@ textarea{
 }
 
 .alinhar {
+  height: 70vh;
   display: flex;
   align-items: center; 
   flex-direction: column;
@@ -67,10 +68,13 @@ textarea{
 .feed {
   border: 2px solid #35030b;
   margin-top: 1rem;
-  width: 200px;
-  height: 200px;
+  width: 40vw;
+  height: 20vh;
   border-radius: 3ch;
   overflow: auto;
+  font-size: 2ch;
+  display: flex;
+  flex-direction: column;
 }
 
 .feed:hover {
@@ -117,4 +121,29 @@ form > * {
   padding-top: 1px;
   text-decoration: none;
   color:#231F20;
+  border: 2px solid red;
+  width: 50%;
+}
+
+#icondelete{
+  cursor: pointer;
+  border: 2px solid green;
+  width: 25px;
+  align-items: center;
+  margin-left: 640px;
+  margin-bottom: 0px;
+}
+
+#iconedit{
+  border: 2px solid blue;
+  margin-top: auto;
+  margin-left: 637px;
+}
+
+.content{
+  display: flex;
+  margin-left: 15px;
+  border: 2px solid orange;
+  height: 30vh;
+  width: 30vw;
 }

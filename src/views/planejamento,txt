@@ -108,11 +108,6 @@ nav {
   overflow: auto;
 }
 
-.feed:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
-}
-
 h3 {
   font-size: 25px;
   justify-content: first baseline;
