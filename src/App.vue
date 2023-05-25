@@ -7,19 +7,19 @@ export default {
     return {
       posts: [
         {
-          title: "Meu primeiro Post",
+          title: "Livro - Verity",
           datetime: "18/05/2023 - 10:11:29",
-          content: "Conteudo magnifico"
+          content: "Li esse livro em dois dias, a história é muito interessante, até agora não sei em quem acreditar!!! Time Carta ou Manuscrito?"
         },
         {
-          title: "Meu segundo Post",
+          title: "Livro - Uma Segunda Chance",
           datetime: "18/05/2023 - 12:23:43",
-          content: "Conteudo magnifico"
+          content: "Uma história muito bonita, me emocionei do início ao fim! Vale muito a pena :)"
         },
         {
-          title: "Meu terceiro Post",
+          title: "Livro - Até o Verão Terminar",
           datetime: "19/05/2023 - 15:45:22",
-          content: "Conteudo magnifico"
+          content: "Um livro super fofo que te faz torcer pelos personagens o tempo inteiro, você não descansa até chegar ao fim!"
         },
       ],
     };
@@ -61,6 +61,8 @@ export default {
     @create-post="addPost" 
     @edit-post="updatePost" 
     @delete-post="removePost"/>
+
+    <img src="https://www.imagensanimadas.com/data/media/53/livro-imagem-animada-0018.gif" class="gif">
   </main>
 </template>
 

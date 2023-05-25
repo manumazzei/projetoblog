@@ -25,12 +25,14 @@
     height: 15%;
     max-width: 800px;
     border-radius: 8px;
+    font-size: 25px;
 }
 
 .modal-actions{
     background: #231f23;
     padding-bottom: 6px;
     width: 30rem;
+    font-size: 20px;
 }
 
 .bg-error{
