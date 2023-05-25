@@ -7,9 +7,19 @@ export default {
     return {
       posts: [
         {
-          title: "Meu primeiro Post",
-          datetime: "18/5/2023",
-          content: "Conteudo magnifico"
+          title: "Livro - Verity",
+          datetime: "18/05/2023 - 10:11:29",
+          content: "Li esse livro em dois dias, a história é muito interessante, até agora não sei em quem acreditar!!! Time Carta ou Manuscrito?"
+        },
+        {
+          title: "Livro - Uma Segunda Chance",
+          datetime: "18/05/2023 - 12:23:43",
+          content: "Uma história muito bonita, me emocionei do início ao fim! Vale muito a pena :)"
+        },
+        {
+          title: "Livro - Até o Verão Terminar",
+          datetime: "19/05/2023 - 15:45:22",
+          content: "Um livro super fofo que te faz torcer pelos personagens o tempo inteiro, você não descansa até chegar ao fim!"
         },
       ],
     };
@@ -41,8 +51,9 @@ export default {
 <template>
   <header>
     <nav>
-      <RouterLink to="/" class="link">Home</RouterLink>
-      <RouterLink to="/create" class="link">Novo Post</RouterLink>
+      <RouterLink to="/" class="botao">Home</RouterLink>
+      <img src="/text-books.png">
+      <RouterLink to="/create" class="botao">Novo Post</RouterLink>
     </nav>
   </header>
   <main>
@@ -50,27 +61,12 @@ export default {
     @create-post="addPost" 
     @edit-post="updatePost" 
     @delete-post="removePost"/>
+
+    <img src="https://www.imagensanimadas.com/data/media/53/livro-imagem-animada-0018.gif" class="gif">
   </main>
 </template>
 
 <style scoped>
 
-.link{
- width: 25%;
- height: 40px;
- border: 2px solid #35030b;
- justify-content: center;
- text-align: center;
- border-radius: 3ch;
- background: whitesmoke;
- color:#35030b;
- text-decoration: none;
- font-family: fantasy;
-}
 
-.link:hover{
-  background: #35030b;
-  color: #ffe8e9;
-  border-radius: 3ch;
-}
 </style>
