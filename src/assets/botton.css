@@ -1,0 +1,27 @@
+.botao {
+    width: 25%;
+    height: 40px;
+    border-radius: 3ch;
+    text-align: center;
+    text-decoration: none;
+    background: #E7DFD8;
+    border: 2px solid #35030b;
+    color: #654F3A;
+  }
+  
+  .botao:hover {
+    background: #231F20;
+    color:#FFFFFF;
+    border-radius: 3ch;
+  }
+
+  .create {
+    width: 10%;
+    border-radius: 3ch;
+  }
+  
+  .create:hover {
+    background: #231F20;
+    color:#FFFFFF;
+    border-radius: 3ch;
+  }

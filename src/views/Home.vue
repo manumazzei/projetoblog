@@ -58,13 +58,13 @@ export default {
 </script>
 
 <template>
-  <div class="alinhar">
+  <div class="place">
     <input
       class="search"
       v-model="search"
       placeholder="Procure pelo título do post..."/>
       <div class="feed" v-for="post in filteredPosts" :key="post.key">
-        <div class="teste">
+        <div class="line">
       <RouterLink :to="`/detail/${getPostId(post.title)}`">
         <h3 class="title">
           {{ post.title }}
