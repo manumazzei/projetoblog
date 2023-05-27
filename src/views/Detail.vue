@@ -27,7 +27,27 @@ textarea {
     resize: none;
     outline: none;
     border: none;
-    width:80%;
+    width:60%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 2%;
+    font-size: 25px;
+} 
 
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 1%;
 }
+
+h4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 </style>

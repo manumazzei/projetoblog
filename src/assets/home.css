@@ -22,8 +22,8 @@
     width: 40vw;
     height: 20vh;
     border-radius: 3ch;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 2ch;
     display: inline-block;
     flex-direction: column;
