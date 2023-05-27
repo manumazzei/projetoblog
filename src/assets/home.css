@@ -19,7 +19,7 @@
   .feed {
     border: 2px solid #35030b;
     margin-top: 1rem;
-    width: 40vw;
+    width: auto;
     height: 20vh;
     border-radius: 3ch;
     overflow: hidden;
